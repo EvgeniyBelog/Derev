@@ -1,0 +1,831 @@
+﻿body {
+    top: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    /* font-style: normal;
+  font-weight: 500;*/
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p { margin: 10px 0 0 0;}
+/*container*/
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*intro*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("images/background33.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+/*background img*/
+
+
+/*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  left: 300px;
+  opacity: 0.7;
+}*/
+
+
+/*Большой заголовок*/
+
+.intro__inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+    line-height: 1;
+}
+
+.sub__intro-title {
+    color: #fff;
+    display: inline-block, center;
+    /*position: fixed;*/
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: 'Pacifico', cursive;
+    line-height: 1.2;
+    margin-top: 70px;
+}
+
+.intro__title {
+    color: #fff;
+    display: inline-block, center;
+    /*position: fixed;*/
+    font-size: 45px;
+    font-weight: 1000;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/*серце*/
+
+.btn_heart {
+    /*color: red;
+  display: block, center;
+  position: relative;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 100;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  /*transition: font-size .1s linear;*/
+    /*transition-duration: 1s;
+  transition-delay: .3s;*/
+    /*position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  max-width: 500px;
+  font-size: 70px;
+  cursor: pointer;
+  transition: 3s linear;*/
+    position: relative;
+    top: 0;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+    max-width: 500px;
+    font-size: 0px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .7s linear;
+}
+
+.btn_heart:hover {
+    /* transform: scale(2);*/
+    /*font-size: 150px;*/
+    top: 50px;
+}
+
+
+/*.scroll__btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}*/
+
+
+/*Header*/
+
+.header {
+    width: 100%;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #aa5826;
+    font-family: 'Pacifico', cursive;
+}
+
+
+/*logo img*/
+
+#logo img {
+    width: 30px;
+    height: 35px;
+}
+
+
+/*nav*/
+
+.nav {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    position: relative;
+}
+
+
+/*подчеркивание при наведении плавное*/
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    /*display: none; второй вариант резкое*/
+    background-color: #aa5826;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity, 1s linear;
+}
+
+.nav_link:hover {
+    color: #aa5826;
+    transition: color .5s linear;
+}
+
+.nav_link:hover:after {
+    /*display: block; второй вариант резкий*/
+    opacity: 1;
+}
+
+
+/* Section */
+
+.section {
+    padding: 70px 0 0 0;
+}
+
+.about-first__header {
+    background-image: url(images/wooden\ hert_small.png);
+    background-repeat: no-repeat;
+    height: 52px;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto 0px;
+    font-weight: 800;
+    /*text-align: left;*/
+}
+
+.about-first__title {
+    position: relative;
+    left: 25px;
+}
+
+.about-first{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 10px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.about-first-text {
+    margin: 0 0 0 15px;
+}
+
+.about__header {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(images/wooden\ hert_small.png);
+    background-repeat: no-repeat;
+    background-position: 588px;
+    height: 52px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto 0px;
+    font-weight: 800;    
+}
+
+.about__text {
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.about__text-down {
+  text-align: center;
+
+}
+
+/*about*/
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 10px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.item {
+    width: 30%;
+    font-weight: 800;
+}
+
+.wrapper {
+    position: relative;
+    width: 390px;
+    height: 390px;
+    background: #fff;
+    margin: 10px 0 auto;
+    /* border: 3px solid;
+  border-color: #f00;*/
+}
+
+.wrapper .clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.09s;
+    /*z-index: -100;*/
+}
+
+.wrapper .clip1-1 {
+    background: url(images/1-1.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 40% 0, 10% 100%, 0 100%);
+}
+
+.wrapper .clip1-2 {
+    background: url(images/1-3.jpg);
+    background-size: cover;
+    clip-path: polygon(40% 0, 90% 0, 60% 100%, 10% 100%);
+}
+
+.wrapper .clip1-3 {
+    background: url(images/1-2.jpg);
+    background-size: cover;
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 60% 100%);
+}
+
+.wrapper .clip2-1 {
+    background: url(images/2-1.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 40% 0, 10% 100%, 0 100%);
+}
+
+.wrapper .clip2-2 {
+    background: url(images/2-3.jpg);
+    background-size: cover;
+    clip-path: polygon(40% 0, 90% 0, 60% 100%, 10% 100%);
+}
+
+.wrapper .clip2-3 {
+    background: url(images/2-2.jpg);
+    background-size: cover;
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 60% 100%);
+}
+
+.wrapper .clip3-1 {
+    background: url(images/3-1.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 40% 0, 10% 100%, 0 100%);
+}
+
+.wrapper .clip3-2 {
+    background: url(images/3-2.jpg);
+    background-size: cover;
+    clip-path: polygon(40% 0, 90% 0, 60% 100%, 10% 100%);
+}
+
+.wrapper .clip3-3 {
+    background: url(images/3-3.jpg);
+    background-size: cover;
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 60% 100%);
+}
+
+.wrapper:hover .clip {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.wrapper .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.wrapper .clip .content {
+    position: absolute;
+    bottom: -150%;
+    left: 0;
+    width: 33%;
+    line-height: 1;
+    /*height: 15%;*/
+    padding: 0px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.wrapper .clip:hover .content {
+
+    bottom: 0;
+    opacity: 1;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*.after{
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+}*/
+
+.price {
+    padding: 70px 0 0 0;
+}
+
+.price__header {
+    background-image: url(images/wooden\ hert_small.png);
+    background-repeat: no-repeat;
+    height: 52px;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto 0px;
+    font-weight: 800;
+    /*text-align: left;*/
+}
+
+.price__title {
+    position: relative;
+    left: 25px;
+}
+
+.price__text {
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.price-content {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__item {
+    border: 1px solid #AA5826;
+    border-radius: 7px;
+    padding: 20px 5px 5px 5px;
+    width: 290px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    /*box-shadow: 0px 4px 4px #AA5826*/
+}
+
+.order {
+    padding: 70px 0 0 0;
+}
+
+.order__header {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(images/wooden\ hert_small.png);
+    background-repeat: no-repeat;
+    background-position: 853px;
+    height: 52px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto 0px;
+    font-weight: 800;  
+}
+
+.order__title {
+    position: relative;
+    /*left: 25px;*/
+  
+}
+.order__title-img{
+    position: relative;
+    bottom: -6px;
+    left: -3px;
+    height: 113px;
+}
+.order__items {
+   /*padding-top: 80px;*/
+   /* display: flex;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:'order__item-1 .'
+                         'order__item-2 .'
+                         '. order__item-3'
+                         'order__item-4 .'
+                         'order__item-5 .'
+                         'order__item-6 .'
+                         '. order__item-7'
+                         'order__item-8 .'
+                         'order__item-9 order__item-9'
+                         'order__item-10 .';
+    /*grid-gap: 0px 30px;*/
+}
+
+.order__item-1 {
+ grid-area: order__item-1;
+}
+.order__item1-2 {
+ grid-area: order__item-2;
+}
+.order__item-2 {
+ grid-area: order__item-3;
+}
+.order__item2-3 {
+ grid-area: order__item-4;
+ }
+.order__item-3 {
+ grid-area: order__item-5;
+}
+.order__item3-4 {
+ grid-area: order__item-6;
+}
+.order__item-4 {
+ grid-area: order__item-7;
+}
+.order__item4-5 {
+ grid-area: order__item-8;
+}
+.order__item-5 {
+ grid-area: order__item-9;
+}
+.order__item5-6 {
+    grid-area: order__item-10;
+   }
+/*.order__item:nth-child(order__item-1) {
+ grid-area: order__item-1;
+}
+
+.order__item:nth-child(order__item-2) {
+ grid-area: order__item-2;
+}
+
+.order__item:nth-child(order__item-3) {
+ grid-area: order__item-3;
+}
+
+.order__item:nth-child(order__item-4) {
+ grid-area: order__item-4;
+}
+
+.order__item:nth-child(order__item-5) {
+ grid-area: order__item-5;
+}*/
+
+.order__item {
+    /*grid-area: order__item;*/
+    /*margin-bottom: 20px;*/
+    display: flex;
+    /*display:inline-block;*/
+justify-content: center;
+/*vertical-align:bottom;*/
+    align-items: center;
+    /*width: 270px;*/
+}
+
+/*.order__item:nth-child(even) {
+    margin-top: 150px;
+}*/
+
+
+.order__item1-2 {
+    position: relative;
+    left: 10px;
+    right: 10px;
+   /* bottom: 25px;*/
+} 
+.order__item2-3 {
+    position: relative;
+    left: 10px;
+    right: 0px;
+   top: 10px;
+} 
+.order__item3-4 {
+    position: relative;
+    left: 10px;
+    right: 10px;
+   /* bottom: 25px;*/
+}
+.order__item4-5 {
+    position: relative;
+    left: 10px;
+    right: 10px;
+   /* bottom: 25px;*/
+}
+
+.order__item-img {
+    width: 70px;
+    height: 100px;
+    position: relative;
+    z-index: -1;
+    margin-right: 20px;
+}
+
+.order__item-text {
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    line-height: 18px;
+    min-width: 300px;
+    max-width: auto;
+    height: 120px;
+    /*position: relative;*/
+    /*left: -70px;*/
+    text-align: left;
+    /*align-items: flex-bottom;
+  /*display:inline-block;*/
+}
+
+.form__header {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/wooden\ hert_small.png);
+    background-repeat: no-repeat;
+    background-position: 424px;
+    height: 52px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto 0px;
+    font-weight: 800;    
+}
+
+.form__title {
+   
+    text-align: center;
+    /*left: 25px;*/
+}
+
+.contacts__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 410px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.contacts__form-input {
+border: 1px solid #AA5826;
+border-radius: 3px;
+display: inline-block;
+align-items: center;
+margin-bottom: 10px;
+height: 35px;
+width: 100%;
+padding: 0 31px;
+line-height: 20px;
+font-family: Montserrat Alternates;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+color: #000;
+}
+
+.contacts__form-input:focus {
+   outline: none;
+   border: 1px solid #AA5826;
+   border-radius: 3px;
+}
+ 
+.contacts__form-input::placeholder {
+   color: #A1A1A3; 
+}
+
+/* Скрываем элемент <input type="file" /> */
+/*input[type="file"] {
+    display: none;
+}*/
+
+.contacts__inputfile {
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+   
+}
+
+label {
+  margin-top: 15px ;
+  font-size: 12px;
+  color: #AA5826;
+  text-align: center;
+  display: block;
+}
+
+.contacts__form-btn {
+font-family: Montserrat Alternates;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+cursor: pointer;
+text-decoration: none;
+outline: none;
+background-color: #AA5826;
+border: 1px solid #A1A1A3;
+border-radius: 3px;
+margin-top: 15px;
+}
+
+.blog {
+    padding: 70px 0 70px 0;
+}
+
+.blog__header {
+    background-image: url(images/wooden\ hert_small.png);
+    background-repeat: no-repeat;    
+    height: 52px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto 0px;
+    font-weight: 800;    
+}
+/*.price__header {
+    background-image: url(images/wooden\ hert_small.png);
+    background-repeat: no-repeat;
+    height: 52px;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto 0px;
+    font-weight: 800;
+    /*text-align: left;*/
+
+.blog__title {
+    position: relative;
+    left: 25px;
+}
+.blog-content {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__item {
+    display: flex;    
+    justify-content: center;
+    text-align: start;
+}
+.blog__item-img {
+    position: relative;
+}
+
+.blog__item-text {
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 0 0 15px;
+    font-size: 14px;
+    line-height: 16px;
+    width: 330px;
+    max-width: auto;
+    height: 150px;
+    text-align: left;
+    /*align-items: flex-bottom;
+  /*display:inline-block;*/
+}
+
+.blog__item-more {
+    position: relative;
+    font-style: normal;
+    font-weight: lighter;
+    margin: 90px 0 0 0;
+    font-size: 14px;
+    line-height: 16px;
+    width: 330px;
+    max-width: auto;
+    text-align: left;
+    color: #343434;
+}
+
+.footer {
+    padding: 70px 0 0 0;
+    background: url(images/Background-footer.png) center no-repeat;
+    width: 100%;
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.footer__items {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer__nav {
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    position: relative;
+}
+.copyright {
+    padding: 20px 0;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
